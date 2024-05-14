@@ -6,6 +6,10 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./src/output.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Blog preview card</title>
 
@@ -15,21 +19,29 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body class="bg-yellow-400">
-
-  Learning
-
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
+<body class="bg-myel flex flex-col items-center justify-center h-screen font-mfont">
+  <!-- card wrapper -->
+  <div class="w-cusw h-cush bg-mywh  mt-52 rounded-myrad">
+    <!-- showcase image -->
+    <div>
+      <img src="./assets/images/illustration-article.svg" alt="" class="mt-4 rounded-myrad h-cardh w-cardw items-center">
+    </div>
+    <div class="ml-1">
+      <button class="ml-4 pt-2 pb-2 pl-3 pr-3 bg-myel mt-5 rounded-bro">Learning</button>
+    <div class="ml-4 mt-2" >
+      <h3 class="text-lg">Published 21 Dec 2023</h3>
+      <h1 class="mt-4 text-3xl text-black-500 hover:text-myel cursor-pointer font-myweit2">HTML & CSS foundations</h1>
+      <p class="mt-4 font-myweit2 text-mygry">These languages are the backbone of every <br> website, defining structure, content, and <br> presentation</p>
+      <div class="flex flex-row  mt-7">
+        <img src="./assets/images/image-avatar.webp" alt="" class="h-profileh w-profilew">
+        <p class="ml-2.5 mt-1 font-myweit2">Greg Hooper</p>
+      </div>
+    </div>
+    </div>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Emmanuel Oyewole Oyeniyi</a>.
   </div>
 </body>
 </html>
